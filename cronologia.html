@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" data-page="cronologia">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bill Gates — Cronología</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">📘 Bill Gates Bio</a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="cronologia.html" class="active">Cronología</a>
+        <a href="microsoft.html">Microsoft</a>
+        <a href="filantropia.html">Filantropía y Libros</a>
+        <a href="trivia.html">Trivia</a>
+        <a href="contacto.html">Notas y Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn btn-outline btn-sm" type="button">Tema</button>
+        <a href="filantropia.html" class="saved-badge">📚 <span id="savedCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section-header">
+      <h2>Cronología de Vida y Carrera</h2>
+      <span id="timelineCounter" class="card-desc"></span>
+    </div>
+
+    <div class="controls" id="eraFilters">
+      <button class="btn btn-primary btn-sm" data-era="Todas" type="button">Todas</button>
+      <button class="btn btn-outline btn-sm" data-era="Juventud" type="button">Juventud</button>
+      <button class="btn btn-outline btn-sm" data-era="Microsoft" type="button">Microsoft</button>
+      <button class="btn btn-outline btn-sm" data-era="Filantropía" type="button">Filantropía</button>
+      <input id="searchTimelineInput" class="search-input" type="search" placeholder="Buscar año, evento o tema..." />
+    </div>
+
+    <div id="timelineGrid" class="grid"></div>
+  </main>
+
+  <footer>
+    <p>Biografía de Bill Gates • U4 - Manipulando el DOM • <span id="footerYear"></span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

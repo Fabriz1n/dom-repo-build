@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" data-page="home">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bill Gates — Biografía Interactiva</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">📘 Bill Gates Bio</a>
+      <nav>
+        <a href="index.html" class="active">Inicio</a>
+        <a href="cronologia.html">Cronología</a>
+        <a href="microsoft.html">Microsoft</a>
+        <a href="filantropia.html">Filantropía y Libros</a>
+        <a href="trivia.html">Trivia</a>
+        <a href="contacto.html">Notas y Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn btn-outline btn-sm" type="button">Tema</button>
+        <a href="filantropia.html" class="saved-badge">📚 <span id="savedCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 id="heroHeading">William Henry Gates III (Bill Gates)</h1>
+      <p>Nacido el 28 de octubre de 1955 en Seattle, Washington. Cofundador de Microsoft, impulsor de la popularización del software personal y líder filantrópico centrado en salud global, energía limpia y educación.</p>
+      <div class="controls" style="margin-bottom: 0;">
+        <a href="cronologia.html" class="btn btn-primary">Ver Cronología</a>
+        <a href="trivia.html" class="btn btn-outline">Jugar Trivia</a>
+      </div>
+    </section>
+
+    <div class="section-header">
+      <h2>Hitos Clave en el DOM</h2>
+      <button id="rotateMilestonesBtn" class="btn btn-outline btn-sm" type="button">Cambiar selección</button>
+    </div>
+    <div id="featuredMilestonesGrid" class="grid"></div>
+  </main>
+
+  <footer>
+    <p>Biografía de Bill Gates • U4 - Manipulando el DOM • <span id="footerYear"></span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

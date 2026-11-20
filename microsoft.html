@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" data-page="microsoft">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bill Gates — Etapa Microsoft</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">📘 Bill Gates Bio</a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="cronologia.html">Cronología</a>
+        <a href="microsoft.html" class="active">Microsoft</a>
+        <a href="filantropia.html">Filantropía y Libros</a>
+        <a href="trivia.html">Trivia</a>
+        <a href="contacto.html">Notas y Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn btn-outline btn-sm" type="button">Tema</button>
+        <a href="filantropia.html" class="saved-badge">📚 <span id="savedCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section-header">
+      <h2>Impacto en Microsoft y el Software</h2>
+      <span id="selectedEraDetail" class="card-tag">Selecciona un hito para inspeccionar</span>
+    </div>
+
+    <div id="msHighlightsGrid" class="grid" style="margin-bottom: 1.5rem;"></div>
+
+    <div id="msInspectorBox" class="form-box">
+      <h3 id="inspectorTitle" class="card-title">Altair BASIC (1975)</h3>
+      <p id="inspectorText" class="card-desc">Junto a Paul Allen, desarrolló un intérprete de BASIC para el microcomputador Altair 8800, marcando el arranque formal de Micro-Soft.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Biografía de Bill Gates • U4 - Manipulando el DOM • <span id="footerYear"></span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

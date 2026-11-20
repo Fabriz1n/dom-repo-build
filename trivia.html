@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es" data-page="trivia">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bill Gates — Trivia Biográfica</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">📘 Bill Gates Bio</a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="cronologia.html">Cronología</a>
+        <a href="microsoft.html">Microsoft</a>
+        <a href="filantropia.html">Filantropía y Libros</a>
+        <a href="trivia.html" class="active">Trivia</a>
+        <a href="contacto.html">Notas y Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn btn-outline btn-sm" type="button">Tema</button>
+        <a href="filantropia.html" class="saved-badge">📚 <span id="savedCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section-header">
+      <h2>Pon a Prueba tu Conocimiento</h2>
+      <span id="scoreDisplay" class="year-pill">Puntaje: 0</span>
+    </div>
+
+    <div class="form-box" id="quizBox">
+      <span id="questionProgress" class="card-tag">Pregunta 1</span>
+      <h3 id="questionText" class="card-title"></h3>
+      <div id="optionsContainer"></div>
+      <div id="quizFeedback" class="feedback" hidden></div>
+      <button id="nextQuestionBtn" class="btn btn-primary" type="button">Siguiente pregunta</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>Biografía de Bill Gates • U4 - Manipulando el DOM • <span id="footerYear"></span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

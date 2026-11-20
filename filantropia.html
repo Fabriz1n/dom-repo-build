@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" data-page="filantropia">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bill Gates — Filantropía y Libros</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">📘 Bill Gates Bio</a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="cronologia.html">Cronología</a>
+        <a href="microsoft.html">Microsoft</a>
+        <a href="filantropia.html" class="active">Filantropía y Libros</a>
+        <a href="trivia.html">Trivia</a>
+        <a href="contacto.html">Notas y Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn btn-outline btn-sm" type="button">Tema</button>
+        <a href="filantropia.html" class="saved-badge">📚 <span id="savedCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section-header">
+      <h2>Ejes Filantrópicos</h2>
+    </div>
+    <div id="philanthropyGrid" class="grid" style="margin-bottom: 2.2rem;"></div>
+
+    <div class="section-header">
+      <h2>Lecturas Recomendadas por Bill Gates</h2>
+      <button id="clearSavedBooksBtn" class="btn btn-danger btn-sm" type="button">Limpiar guardados</button>
+    </div>
+    <div id="booksGrid" class="grid"></div>
+  </main>
+
+  <footer>
+    <p>Biografía de Bill Gates • U4 - Manipulando el DOM • <span id="footerYear"></span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

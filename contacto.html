@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es" data-page="contacto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bill Gates — Notas y Contacto</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">📘 Bill Gates Bio</a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="cronologia.html">Cronología</a>
+        <a href="microsoft.html">Microsoft</a>
+        <a href="filantropia.html">Filantropía y Libros</a>
+        <a href="trivia.html">Trivia</a>
+        <a href="contacto.html" class="active">Notas y Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn btn-outline btn-sm" type="button">Tema</button>
+        <a href="filantropia.html" class="saved-badge">📚 <span id="savedCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="section-header">
+      <h2>Notas Biográficas y Sugerencias</h2>
+    </div>
+
+    <form id="noteForm" class="form-box" style="margin-bottom: 1.8rem;">
+      <div class="form-group">
+        <label for="noteTitle">Título de la nota o aporte</label>
+        <input id="noteTitle" type="text" placeholder="Ej. Carta abierta sobre software en 1976" required />
+      </div>
+      <div class="form-group">
+        <label for="noteAuthor">Tu nombre</label>
+        <input id="noteAuthor" type="text" placeholder="Tu nombre" required />
+      </div>
+      <div class="form-group">
+        <label for="noteContent">Contenido / Comentario</label>
+        <textarea id="noteContent" rows="3" placeholder="Escribe tu resumen o sugerencia..." required></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Guardar nota en el DOM</button>
+      <div id="noteFeedback" class="feedback" hidden></div>
+    </form>
+
+    <div id="notesList" class="grid"></div>
+  </main>
+
+  <footer>
+    <p>Biografía de Bill Gates • U4 - Manipulando el DOM • <span id="footerYear"></span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
